@@ -1,0 +1,31 @@
+{
+	"name": "DS_KursySQLBD_Countries",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AiflopsDatabase_Countries",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CountryRegionCode",
+				"type": "nchar"
+			},
+			{
+				"name": "Name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Countries"
+		}
+	}
+}
